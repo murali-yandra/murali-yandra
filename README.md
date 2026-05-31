@@ -59,7 +59,7 @@ Welcome to my central repository. I engineer and optimize high-throughput, enter
     </td>
     <td width="50%" align="center">
       <!-- Placeholder for lowlighter/metrics animated SVGs -->
-      <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=radical&hide_border=true&title_color=00ffcc&text_color=ffffff&bg_color=0d1117" alt="GitHub Stats">
+      <img src="https://github-readme-stats.vercel.app/api?username=murali-yandra&show_icons=true&theme=radical&hide_border=true&title_color=00ffcc&text_color=ffffff&bg_color=0d1117" alt="GitHub Stats">
     </td>
   </tr>
 </table>
