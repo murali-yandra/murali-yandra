@@ -6,7 +6,7 @@
 
 <br>
 
-Welcome to my central repository. I engineer and optimize high-throughput, enterprise-grade cloud data pipelines. Currently operating as a Data Engineer at Accenture[cite: 2], I specialize in migrating legacy workflows, processing massive datasets (100M+ row tables)[cite: 2], and fine-tuning query logic down to the millisecond[cite: 2].
+Welcome to my central repository. I engineer and optimize high-throughput, enterprise-grade cloud data pipelines. Currently operating as a Data Engineer at Accenture, I specialize in migrating legacy workflows, processing massive datasets (100M+ row tables), and fine-tuning query logic down to the millisecond.
 
 <br>
 
@@ -22,9 +22,9 @@ Welcome to my central repository. I engineer and optimize high-throughput, enter
 </p>
 
 ### 📜 CERTIFIED_PROTOCOLS
-* **Google Cloud:** Professional Data Engineer, Cloud Database Engineer, Machine Learning Engineer[cite: 2]
-* **Anthropic:** Claude Certified Architect Foundations[cite: 2]
-* **Accenture:** Multi-Skilled Champion FY25[cite: 2]
+* **Google Cloud:** Professional Data Engineer, Cloud Database Engineer, Machine Learning Engineer
+* **Anthropic:** Claude Certified Architect Foundations
+* **Accenture:** Multi-Skilled Champion FY25
 
 </div>
 
@@ -38,8 +38,8 @@ Welcome to my central repository. I engineer and optimize high-throughput, enter
   
 *Visualizing system contributions and daily commit volume.*
 
-<!-- This image is generated automatically by the GitHub Action we set up in Step 1 -->
-<img src="./profile-3d-contrib/profile-night-view.svg" width="100%" alt="3D Isometric Commit Graph">
+<!-- Switched to the Green Animate theme for a rotating, hacker-matrix vibe -->
+<img src="./profile-3d-contrib/profile-green-animate.svg" width="100%" alt="3D Isometric Commit Graph">
 
 </div>
 
@@ -52,15 +52,14 @@ Welcome to my central repository. I engineer and optimize high-throughput, enter
     <td width="50%" align="center">
       <h3>🚀 RECENT_OPERATIONS</h3>
       <ul align="left">
-        <li>Migrated ~30 SSIS workflows to Azure Data Factory (ADF)[cite: 2].</li>
-        <li>Architected 65+ ADF/SSIS pipelines for automated healthcare billing schedules[cite: 2].</li>
-        <li>Optimized critical T-SQL stored procedures, slashing execution time from 40s to ~15s[cite: 2].</li>
+        <li>Migrated ~30 SSIS workflows to Azure Data Factory (ADF).</li>
+        <li>Architected 65+ ADF/SSIS pipelines for automated healthcare billing schedules.</li>
+        <li>Optimized critical T-SQL stored procedures, slashing execution time from 40s to ~15s.</li>
       </ul>
     </td>
     <td width="50%" align="center">
-      <!-- Placeholder for lowlighter/metrics animated SVGs -->
-      <!-- CHANGE 'YOUR_USERNAME' TO 'murali-yandra' -->
-<img align="right" width="48%" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=murali-yandra&show_icons=true&theme=radical&hide_border=true&title_color=00ffcc&text_color=ffffff&bg_color=0d1117" alt="GitHub Stats">
+      <!-- Highly optimized GitHub Stats Card with the Radical theme -->
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=murali-yandra&show_icons=true&theme=radical&hide_border=true&title_color=00ffcc&text_color=ffffff&bg_color=0d1117" alt="GitHub Stats">
     </td>
   </tr>
 </table>
