@@ -1,91 +1,236 @@
-# Hi there 👋 I'm Murali Yandra
+# Hi, I'm Murali Yandra 👋
 
-### Data Engineer | SQL Expert | ETL & Cloud Data Pipelines
+### Data Engineer | SQL Expert | Cloud & ETL Specialist
 
-I'm a Data Engineer at Accenture with experience building and optimizing enterprise-scale data platforms, ETL pipelines, and cloud-based data solutions.
+Data Engineer at Accenture with 2+ years of experience designing, building, and optimizing scalable data pipelines and cloud data solutions. Passionate about transforming raw data into reliable insights and driving data-driven decisions.
 
----
-
-## 🚀 About Me
-
-* 💼 Data Engineer with 2+ years of experience
-* ☁️ Working on Azure Data Factory, SQL Server, Python, and Cloud Data Platforms
-* ⚡ Optimized large-scale SQL workloads handling 100M+ records
-* 🔄 Migrated legacy SSIS solutions to Azure Data Factory
-* 📊 Built and maintained 65+ production ETL pipelines
-* 🌱 Currently exploring PySpark, Airflow, BigQuery, and modern Data Engineering architectures
+📍 Bengaluru, India   |   🏢 Accenture
 
 ---
 
-## 🛠 Tech Stack
+## 📊 Quick Snapshot
 
-### Data Engineering
-
-![Azure Data Factory](https://img.shields.io/badge/Azure_Data_Factory-0089D6?style=for-the-badge\&logo=microsoftazure\&logoColor=white)
-![SSIS](https://img.shields.io/badge/SSIS-CC2927?style=for-the-badge\&logo=microsoftsqlserver\&logoColor=white)
-![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge\&logo=microsoftsqlserver\&logoColor=white)
-![PySpark](https://img.shields.io/badge/PySpark-E25A1C?style=for-the-badge\&logo=apachespark\&logoColor=white)
-![Apache Airflow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge\&logo=apacheairflow\&logoColor=white)
-
-### Programming
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge\&logo=postgresql\&logoColor=white)
-
-### Cloud & Analytics
-
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge\&logo=googlecloud\&logoColor=white)
-![BigQuery](https://img.shields.io/badge/BigQuery-4285F4?style=for-the-badge\&logo=googlebigquery\&logoColor=white)
+| Experience | Pipelines Built | Rows Processed | Query Optimization |
+| ---------- | --------------- | -------------- | ------------------ |
+| 2+ Years   | 65+             | 100M+          | 40s → 15s          |
 
 ---
 
-## 🏆 Certifications
+# 🛠 Tech Stack
 
-* Google Cloud Professional Data Engineer
-* Google Cloud Professional Cloud Database Engineer
-* Google Cloud Professional Machine Learning Engineer
-* Claude Certified Architect Foundations
-* Accenture Multi-Skilled Champion FY25
+## Data Engineering
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=azure" height="50"/>
+  <img src="https://cdn.simpleicons.org/microsoftsqlserver/CC2927" height="50"/>
+  <img src="https://cdn.simpleicons.org/apacheairflow/017CEE" height="50"/>
+  <img src="https://cdn.simpleicons.org/apachespark/E25A1C" height="50"/>
+</p>
+
+**Azure Data Factory • SSIS • SQL Server • PySpark • Airflow**
 
 ---
 
-## 📌 Key Achievements
+## Programming
 
-### ETL Modernization
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=python" height="50"/>
+  <img src="https://cdn.simpleicons.org/postgresql/336791" height="50"/>
+</p>
+
+**Python • SQL**
+
+---
+
+## Cloud & Analytics
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=gcp" height="50"/>
+  <img src="https://cdn.simpleicons.org/googlebigquery/4285F4" height="50"/>
+</p>
+
+**Google Cloud • BigQuery**
+
+---
+
+# 🚀 Key Achievements
+
+### 🔄 ETL Modernization
 
 * Migrated 30+ SSIS workflows to Azure Data Factory
+* Improved reliability and maintainability of enterprise ETL processes
 
-### Pipeline Engineering
+### ⚙️ Pipeline Engineering
 
-* Designed and maintained 65+ production-grade ETL pipelines
+* Designed and maintained 65+ production ETL pipelines
+* Automated healthcare billing and data workflows
 
-### SQL Performance Optimization
+### ⚡ SQL Performance Optimization
 
-* Reduced critical stored procedure execution time from 40 seconds to ~15 seconds
+* Reduced critical stored procedure execution time from **40 seconds to 15 seconds**
+* Optimized indexing, joins, and query execution plans
 
-### Enterprise Data Processing
+### 📈 Large Scale Data Processing
 
-* Worked with large healthcare datasets containing 100M+ records
+* Processed datasets containing **100M+ rows**
+* Worked on enterprise healthcare analytics platforms
 
 ---
 
-## 📈 GitHub Stats
+# 🏆 Certifications
+
+| Certification                          | Provider     |
+| -------------------------------------- | ------------ |
+| Professional Data Engineer             | Google Cloud |
+| Professional Cloud Database Engineer   | Google Cloud |
+| Professional Machine Learning Engineer | Google Cloud |
+| Claude Certified Architect Foundations | Anthropic    |
+| Multi-Skilled Champion FY25            | Accenture    |
+
+---
+
+# 📌 Featured Projects
+
+<table>
+<tr>
+<td width="50%">
+
+### 🔷 ADF ETL Framework
+
+Reusable Azure Data Factory framework for scalable ETL development.
+
+**Tech Stack**
+
+* Azure Data Factory
+* SQL Server
+* Python
+
+</td>
+
+<td width="50%">
+
+### ⚡ SQL Performance Tuning
+
+Collection of T-SQL optimization techniques, indexing strategies, and execution plan analysis.
+
+**Tech Stack**
+
+* SQL Server
+* T-SQL
+
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+
+### 🔥 PySpark Data Processing
+
+Large-scale distributed data processing and transformation pipelines.
+
+**Tech Stack**
+
+* PySpark
+* Python
+
+</td>
+
+<td width="50%">
+
+### 🌪 Airflow DAG Framework
+
+Workflow orchestration and scheduling framework for modern data pipelines.
+
+**Tech Stack**
+
+* Airflow
+* Python
+
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+
+### ☁️ GCP Data Pipeline
+
+End-to-end cloud data pipeline leveraging BigQuery and cloud-native services.
+
+**Tech Stack**
+
+* GCP
+* BigQuery
+
+</td>
+
+<td width="50%">
+
+### 📚 Data Engineering Notes
+
+Interview preparation notes, architecture patterns, and best practices.
+
+**Tech Stack**
+
+* Markdown
+* SQL
+* Python
+
+</td>
+</tr>
+</table>
+
+---
+
+# 📈 GitHub Statistics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=murali-yandra&show_icons=true&theme=github_dark&hide_border=true" />
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=murali-yandra&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github"/>
+
+<img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=murali-yandra&theme=github-dark-blue&hide_border=true"/>
+
 </p>
+
+---
+
+# 🔥 Streak Statistics
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=murali-yandra&theme=github-dark-blue&hide_border=true" />
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=murali-yandra&theme=github_dark"/>
+
 </p>
 
 ---
 
-## 🤝 Connect With Me
+# 📊 Contribution Activity
 
-* LinkedIn: https://linkedin.com/in/murali-yandra
-* Location: Bengaluru, India
+<p align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=murali-yandra&theme=github-compact&hide_border=true"/>
+
+</p>
 
 ---
 
-### Building scalable data platforms one pipeline at a time 🚀
+# 🤝 Let's Connect
+
+<p align="left">
+<a href="https://linkedin.com/in/murali-yandra">
+<img src="https://skillicons.dev/icons?i=linkedin" height="40"/>
+</a>
+
+<a href="mailto:yandramurali437@gmail.com">
+<img src="https://skillicons.dev/icons?i=gmail" height="40"/>
+</a>
+</p>
+
+**LinkedIn:** https://linkedin.com/in/murali-yandra
+
+**Email:** [yandramurali437@gmail.com](mailto:yandramurali437@gmail.com)
+
+**Location:** Bengaluru, India
+
+---
+
+### 🚀 Building scalable data platforms one pipeline at a time.
