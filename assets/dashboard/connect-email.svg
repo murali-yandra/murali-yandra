@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="36" viewBox="0 0 250 36" role="img" aria-labelledby="title">
+  <title id="title">Email</title>
+  <rect width="250" height="36" rx="8" fill="#ea4335"/>
+  <path d="M16 11h22v16H16Z" fill="#ffffff"/>
+  <path d="M16 12 27 21 38 12" fill="none" stroke="#ea4335" stroke-width="2"/>
+  <text x="52" y="23" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">yandramurali437@gmail.com</text>
+</svg>

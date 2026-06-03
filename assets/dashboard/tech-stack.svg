@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250" role="img" aria-labelledby="title">
+  <title id="title">Tech stack</title>
+  <rect width="1000" height="250" rx="18" fill="#ffffff"/>
+  <rect x="1" y="1" width="998" height="248" rx="18" fill="none" stroke="#dbe3ef"/>
+  <text x="34" y="42" fill="#0f172a" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">Tech Stack</text>
+  <line x1="525" y1="72" x2="525" y2="220" stroke="#dbe3ef"/>
+  <line x1="745" y1="72" x2="745" y2="220" stroke="#dbe3ef"/>
+  <text x="34" y="78" fill="#0f172a" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">Data Engineering</text>
+  <text x="565" y="78" fill="#0f172a" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">Programming</text>
+  <text x="785" y="78" fill="#0f172a" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">Cloud &amp; Analytics</text>
+  <g transform="translate(34 106)">
+    <g>
+      <rect width="74" height="74" rx="14" fill="#e0f2fe"/>
+      <path d="M20 58V22l13 8v15l10-6v13l11-7v33H20Z" fill="#0078d4"/>
+      <text x="37" y="98" text-anchor="middle" fill="#334155" font-family="Segoe UI, Arial, sans-serif" font-size="12">Azure Data</text>
+      <text x="37" y="114" text-anchor="middle" fill="#334155" font-family="Segoe UI, Arial, sans-serif" font-size="12">Factory</text>
+    </g>
+    <g transform="translate(100 0)">
+      <rect width="74" height="74" rx="14" fill="#fff1f2"/>
+      <ellipse cx="37" cy="24" rx="22" ry="8" fill="#cc2927"/>
+      <path d="M15 24v28c0 5 10 8 22 8s22-3 22-8V24" fill="#cc2927"/>
+      <path d="M17 47h40M37 60v14M24 74h26" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+      <text x="37" y="100" text-anchor="middle" fill="#334155" font-family="Segoe UI, Arial, sans-serif" font-size="12">SSIS</text>
+    </g>
+    <g transform="translate(200 0)">
+      <rect width="74" height="74" rx="14" fill="#fff1f2"/>
+      <ellipse cx="37" cy="22" rx="24" ry="8" fill="#cc2927"/>
+      <path d="M13 22v34c0 5 11 8 24 8s24-3 24-8V22" fill="#cc2927"/>
+      <path d="M13 35c0 5 11 8 24 8s24-3 24-8M13 48c0 5 11 8 24 8s24-3 24-8" stroke="#ffffff" stroke-width="3" fill="none"/>
+      <text x="37" y="98" text-anchor="middle" fill="#334155" font-family="Segoe UI, Arial, sans-serif" font-size="12">SQL Server</text>
+    </g>
+    <g transform="translate(300 0)">
+      <rect width="74" height="74" rx="14" fill="#fff7ed"/>
+      <path d="M37 11 46 31 66 25 51 41 61 60 37 50 15 61 26 41 11 25 31 31Z" fill="none" stroke="#f97316" stroke-width="6" stroke-linejoin="round"/>
+      <text x="37" y="98" text-anchor="middle" fill="#334155" font-family="Segoe UI, Arial, sans-serif" font-size="12">Apache Spark</text>
+    </g>
+    <g transform="translate(400 0)">
+      <rect width="74" height="74" rx="14" fill="#eff6ff"/>
+      <path d="M37 37 58 16c9 18 1 37-21 42Z" fill="#22d3ee"/>
+      <path d="M37 37 16 16c22 5 30 24 21 42Z" fill="#2563eb"/>
+      <path d="M37 37 16 58c-9-18-1-37 21-42Z" fill="#60a5fa"/>
+      <path d="M37 37 58 58c-22-5-30-24-21-42Z" fill="#0284c7"/>
+      <circle cx="37" cy="37" r="5" fill="#ffffff"/>
+      <text x="37" y="98" text-anchor="middle" fill="#334155" font-family="Segoe UI, Arial, sans-serif" font-size="12">Apache Airflow</text>
+    </g>
+  </g>
+  <g transform="translate(565 106)">
+    <g>
+      <rect width="74" height="74" rx="14" fill="#eff6ff"/>
+      <path d="M20 39c0-16 11-24 27-19v23H24c-10 0-12 14-1 16h-8c-15 0-18-20 5-20Z" fill="#3776ab"/>
+      <path d="M54 35c0 16-11 24-27 19V31h23c10 0 12-14 1-16h8c15 0 18 20-5 20Z" fill="#ffd43b"/>
+      <text x="37" y="100" text-anchor="middle" fill="#334155" font-family="Segoe UI, Arial, sans-serif" font-size="12">Python</text>
+    </g>
+    <g transform="translate(100 0)">
+      <rect width="74" height="74" rx="14" fill="#eff6ff"/>
+      <ellipse cx="37" cy="23" rx="24" ry="8" fill="#2563eb"/>
+      <path d="M13 23v34c0 5 11 8 24 8s24-3 24-8V23" fill="#2563eb"/>
+      <text x="37" y="100" text-anchor="middle" fill="#334155" font-family="Segoe UI, Arial, sans-serif" font-size="12">SQL</text>
+    </g>
+  </g>
+  <g transform="translate(785 106)">
+    <g>
+      <rect width="74" height="74" rx="14" fill="#f8fafc"/>
+      <path d="M21 48h37a16 16 0 0 0-4-30 24 24 0 0 0-45 11A13 13 0 0 0 21 48Z" fill="#4285f4"/>
+      <path d="M17 46a13 13 0 0 1 14-22" stroke="#34a853" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M41 17a24 24 0 0 1 24 24" stroke="#fbbc04" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M21 48h35" stroke="#ea4335" stroke-width="7" stroke-linecap="round"/>
+      <text x="37" y="100" text-anchor="middle" fill="#334155" font-family="Segoe UI, Arial, sans-serif" font-size="12">Google Cloud</text>
+    </g>
+    <g transform="translate(100 0)">
+      <rect width="74" height="74" rx="14" fill="#eff6ff"/>
+      <path d="M37 9 62 23v28L37 65 12 51V23Z" fill="#4285f4"/>
+      <circle cx="37" cy="38" r="13" fill="none" stroke="#dbeafe" stroke-width="5"/>
+      <path d="M47 48 56 57" stroke="#dbeafe" stroke-width="5" stroke-linecap="round"/>
+      <text x="37" y="100" text-anchor="middle" fill="#334155" font-family="Segoe UI, Arial, sans-serif" font-size="12">BigQuery</text>
+    </g>
+  </g>
+</svg>

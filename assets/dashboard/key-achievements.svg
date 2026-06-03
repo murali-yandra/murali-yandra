@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="420" viewBox="0 0 490 420" role="img" aria-labelledby="title">
+  <title id="title">Key achievements</title>
+  <rect width="490" height="420" rx="16" fill="#ffffff"/>
+  <rect x="1" y="1" width="488" height="418" rx="16" fill="none" stroke="#dbe3ef"/>
+  <text x="28" y="42" fill="#0f172a" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="800">Key Achievements</text>
+  <g transform="translate(28 78)">
+    <circle cx="26" cy="26" r="26" fill="#eff6ff"/>
+    <path d="M17 36 36 17M36 17v16M36 17H20" stroke="#2563eb" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="72" y="20" fill="#0f172a" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Migrated 30+ SSIS workflows to ADF</text>
+    <text x="72" y="43" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="13">Modernized legacy ETL workflows for reliability.</text>
+  </g>
+  <g transform="translate(28 158)">
+    <circle cx="26" cy="26" r="26" fill="#eef2ff"/>
+    <path d="M26 12v19M12 45h14M40 45h14M26 31 12 45M26 31l28 14" stroke="#4f46e5" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="72" y="20" fill="#0f172a" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Built 65+ production ETL pipelines</text>
+    <text x="72" y="43" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="13">Designed automated workflows for production use.</text>
+  </g>
+  <g transform="translate(28 238)">
+    <circle cx="26" cy="26" r="26" fill="#fff7ed"/>
+    <path d="M11 34a15 15 0 1 1 30 0M26 34l12-15" stroke="#f97316" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <text x="72" y="20" fill="#0f172a" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Optimized SQL performance</text>
+    <text x="72" y="43" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="13">Improved indexing, joins, and execution plans.</text>
+  </g>
+  <g transform="translate(28 318)">
+    <circle cx="26" cy="26" r="26" fill="#ecfdf5"/>
+    <ellipse cx="26" cy="17" rx="17" ry="6" fill="#059669"/>
+    <path d="M9 17v26c0 4 8 7 17 7s17-3 17-7V17" fill="#059669"/>
+    <path d="M9 28c0 4 8 7 17 7s17-3 17-7" stroke="#ffffff" stroke-width="3" fill="none"/>
+    <text x="72" y="20" fill="#0f172a" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Processed 100M+ rows of data</text>
+    <text x="72" y="43" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="13">Handled large-scale datasets with accuracy.</text>
+  </g>
+</svg>

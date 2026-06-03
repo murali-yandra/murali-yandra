@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="36" viewBox="0 0 170 36" role="img" aria-labelledby="title">
+  <title id="title">Location</title>
+  <rect width="170" height="36" rx="8" fill="#34a853"/>
+  <path d="M16 15c0-6 5-10 11-10s11 4 11 10c0 8-11 19-11 19S16 23 16 15Z" fill="#ffffff"/>
+  <circle cx="27" cy="15" r="4" fill="#34a853"/>
+  <text x="52" y="23" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Bengaluru, India</text>
+</svg>

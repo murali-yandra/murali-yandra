@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="330" viewBox="0 0 490 330" role="img" aria-labelledby="title">
+  <title id="title">Personal Finance Tracking Platform</title>
+  <rect width="490" height="330" rx="16" fill="#ffffff"/>
+  <rect x="1" y="1" width="488" height="328" rx="16" fill="none" stroke="#dbe3ef"/>
+  <text x="28" y="42" fill="#075be8" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800">Personal Finance Tracking Platform</text>
+  <text x="28" y="76" fill="#334155" font-family="Segoe UI, Arial, sans-serif" font-size="14">
+    <tspan x="28" dy="0">Automated expense tracking, account reconciliation,</tspan>
+    <tspan x="28" dy="22">merchant learning, and AI-assisted transaction</tspan>
+    <tspan x="28" dy="22">categorization.</tspan>
+  </text>
+  <g transform="translate(28 150)">
+    <rect width="84" height="28" rx="14" fill="#ecfdf5"/><text x="42" y="19" text-anchor="middle" fill="#047857" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">FastAPI</text>
+    <rect x="94" width="102" height="28" rx="14" fill="#eff6ff"/><text x="145" y="19" text-anchor="middle" fill="#2563eb" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">PostgreSQL</text>
+    <rect x="206" width="90" height="28" rx="14" fill="#fff7ed"/><text x="251" y="19" text-anchor="middle" fill="#c2410c" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">SQLModel</text>
+    <rect x="306" width="80" height="28" rx="14" fill="#f1f5f9"/><text x="346" y="19" text-anchor="middle" fill="#334155" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">Alembic</text>
+    <rect y="42" width="82" height="28" rx="14" fill="#eff6ff"/><text x="41" y="61" text-anchor="middle" fill="#2563eb" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">Docker</text>
+    <rect x="92" y="42" width="138" height="28" rx="14" fill="#eff6ff"/><text x="161" y="61" text-anchor="middle" fill="#2563eb" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">GitHub Actions</text>
+    <rect x="240" y="42" width="82" height="28" rx="14" fill="#f1f5f9"/><text x="281" y="61" text-anchor="middle" fill="#334155" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">Ollama</text>
+    <rect x="332" y="42" width="136" height="28" rx="14" fill="#eff6ff"/><text x="400" y="61" text-anchor="middle" fill="#2563eb" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">Telegram Bot API</text>
+  </g>
+  <line x1="28" y1="238" x2="462" y2="238" stroke="#e2e8f0"/>
+  <text x="28" y="266" fill="#0f172a" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Status</text>
+  <text x="85" y="266" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="14">Sprint 0 completed | Sprint 1 in progress</text>
+  <text x="28" y="294" fill="#0f172a" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Repository</text>
+  <text x="112" y="294" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="14">Private</text>
+</svg>
