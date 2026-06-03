@@ -39,24 +39,18 @@ My focus is simple: build data platforms that are clean, automated, explainable,
   &nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" width="48" alt="SQL Server" />
   &nbsp;
-  <img src="https://cdn.simpleicons.org/apacheairflow/017CEE" width="48" alt="Apache Airflow" />
+  <img src="https://api.iconify.design/simple-icons:apacheairflow.svg?color=%23017CEE" width="48" alt="Apache Airflow" />
   &nbsp;
   <img src="https://cdn.simpleicons.org/apachespark/E25A1C" width="48" alt="Apache Spark" />
   &nbsp;
   <img src="https://cdn.simpleicons.org/googlebigquery/4285F4" width="48" alt="BigQuery" />
   &nbsp;
-  <img src="https://cdn.simpleicons.org/dbt/FF694B" width="48" alt="dbt" />
+  <img src="https://api.iconify.design/simple-icons:dbt.svg?color=%23FF694B" width="48" alt="dbt" />
   &nbsp;
   <img src="https://cdn.simpleicons.org/telegram/26A5E4" width="48" alt="Telegram Bot API" />
 </p>
 
 ## What I Build and Work On
-
-### [GCP Airflow DBT Pipeline](https://github.com/murali-yandra/gcp-airflow-dbt-pipeline)
-
-End-to-end data pipeline on Google Cloud using Airflow orchestration, dbt transformations, BigQuery analytics, Python, and SQL.
-
-`Airflow` `dbt` `BigQuery` `GCP` `Python` `SQL`
 
 ### Personal Finance Tracking Platform
 
@@ -75,19 +69,24 @@ Currently working on:
 Status: Sprint 0 completed, Sprint 1 in progress  
 Repository: Private
 
+### [GCP Airflow DBT Pipeline](https://github.com/murali-yandra/gcp-airflow-dbt-pipeline)
+
+End-to-end data pipeline on Google Cloud using Airflow orchestration, dbt transformations, BigQuery analytics, Python, and SQL.
+
+`Airflow` `dbt` `BigQuery` `GCP` `Python` `SQL`
+
 ## GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=murali-yandra&amp;show_icons=true&amp;theme=github_dark&amp;hide_border=true&amp;rank_icon=github" height="175" alt="Murali Yandra GitHub stats" />
-  <img src="https://streak-stats.demolab.com?user=murali-yandra&amp;theme=github-dark-blue&amp;hide_border=true" height="175" alt="Murali Yandra GitHub streak" />
-</p>
+![Murali Yandra GitHub stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=murali-yandra&theme=github_dark)
+
+![Murali Yandra day streak](https://streak-stats.demolab.com?user=murali-yandra&theme=github-dark-blue&hide_border=true&date_format=M%20j%5B%2C%20Y%5D&mode=daily)
 
 ## Contributions
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/murali-yandra/murali-yandra/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/murali-yandra/murali-yandra/output/github-contribution-grid-snake.svg" />
-    <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/murali-yandra/murali-yandra/output/github-contribution-grid-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/murali-yandra/murali-yandra/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/murali-yandra/murali-yandra/output/github-snake.svg" />
+    <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/murali-yandra/murali-yandra/output/github-snake.svg" />
   </picture>
 </p>
