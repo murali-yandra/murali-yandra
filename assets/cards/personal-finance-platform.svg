@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="430" viewBox="0 0 490 430" role="img" aria-labelledby="title">
+  <title id="title">Personal Finance Tracking Platform</title>
+  <rect width="490" height="430" rx="18" fill="#0d1117"/>
+  <rect x="1" y="1" width="488" height="428" rx="18" fill="none" stroke="#30363d"/>
+  <path d="M0 0h490v116H0Z" fill="#052e16"/>
+  <text x="28" y="47" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="800">Personal Finance Tracking</text>
+  <text x="28" y="78" fill="#86efac" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Private repository | Sprint 0 completed | Sprint 1 in progress</text>
+  <g transform="translate(350 24)">
+    <rect x="10" y="8" width="78" height="58" rx="10" fill="#dcfce7"/>
+    <path d="M24 50h52M30 42V28M46 42V20M62 42V32" stroke="#16a34a" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="74" cy="18" r="12" fill="#fbbf24"/>
+    <path d="M74 11v14M67 18h14" stroke="#854d0e" stroke-width="3"/>
+  </g>
+  <text x="28" y="150" fill="#e5e7eb" font-family="Segoe UI, Arial, sans-serif" font-size="15">
+    <tspan x="28" dy="0">Automated expense tracking, account reconciliation,</tspan>
+    <tspan x="28" dy="24">merchant learning, and AI-assisted transaction categorization.</tspan>
+  </text>
+  <g transform="translate(28 206)">
+    <rect width="420" height="72" rx="14" fill="#111827" stroke="#1f2937"/>
+    <text x="18" y="28" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Tech Stack</text>
+    <text x="18" y="52" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="13">FastAPI, PostgreSQL, SQLModel, Alembic, Docker</text>
+    <text x="18" y="68" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="13">GitHub Actions, Ollama, Telegram Bot API</text>
+  </g>
+  <g transform="translate(28 300)">
+    <rect width="194" height="34" rx="17" fill="#064e3b"/><text x="97" y="22" text-anchor="middle" fill="#bbf7d0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">SMS-based ingestion</text>
+    <rect x="210" width="166" height="34" rx="17" fill="#1e3a8a"/><text x="293" y="22" text-anchor="middle" fill="#bfdbfe" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Merchant learning</text>
+    <rect y="48" width="182" height="34" rx="17" fill="#431407"/><text x="91" y="70" text-anchor="middle" fill="#fed7aa" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Balance reconciliation</text>
+    <rect x="198" y="48" width="122" height="34" rx="17" fill="#082f49"/><text x="259" y="70" text-anchor="middle" fill="#bae6fd" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Telegram bot</text>
+    <rect x="336" y="48" width="134" height="34" rx="17" fill="#581c87"/><text x="403" y="70" text-anchor="middle" fill="#e9d5ff" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">AI categories</text>
+  </g>
+</svg>
