@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="270" viewBox="0 0 1100 270" role="img" aria-labelledby="title">
+  <title id="title">Data engineering workbench</title>
+  <rect width="1100" height="270" rx="22" fill="#ffffff"/>
+  <rect x="1" y="1" width="1098" height="268" rx="22" fill="none" stroke="#dbe3ef"/>
+  <text x="42" y="48" fill="#0f172a" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="850">Data Engineering Workbench</text>
+  <text x="42" y="78" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="15">Inspired by the best profile README patterns: crisp positioning, visual proof, and project-first storytelling.</text>
+  <g transform="translate(42 112)">
+    <rect width="250" height="112" rx="16" fill="#f8fafc" stroke="#dbe3ef"/>
+    <circle cx="34" cy="36" r="18" fill="#eff6ff"/>
+    <path d="M26 42 42 26M42 26v14M42 26H29" stroke="#2563eb" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="62" y="36" fill="#0f172a" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">ETL modernization</text>
+    <text x="22" y="75" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="13">Migrating SSIS workflows into</text>
+    <text x="22" y="94" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="13">cloud-ready Azure Data Factory.</text>
+  </g>
+  <g transform="translate(318 112)">
+    <rect width="250" height="112" rx="16" fill="#f8fafc" stroke="#dbe3ef"/>
+    <circle cx="34" cy="36" r="18" fill="#eef2ff"/>
+    <path d="M34 21v18M22 52h12M46 52h12M34 39 22 52M34 39l12 13" stroke="#4f46e5" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <text x="62" y="36" fill="#0f172a" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">Pipeline engineering</text>
+    <text x="22" y="75" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="13">Production pipelines, scheduling,</text>
+    <text x="22" y="94" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="13">monitoring, and clean handoffs.</text>
+  </g>
+  <g transform="translate(594 112)">
+    <rect width="250" height="112" rx="16" fill="#f8fafc" stroke="#dbe3ef"/>
+    <circle cx="34" cy="36" r="18" fill="#fff7ed"/>
+    <path d="M20 43a14 14 0 1 1 28 0M34 43l11-14" stroke="#f97316" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <text x="62" y="36" fill="#0f172a" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">SQL performance</text>
+    <text x="22" y="75" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="13">Indexes, joins, execution plans,</text>
+    <text x="22" y="94" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="13">and reliable query behavior.</text>
+  </g>
+  <g transform="translate(870 112)">
+    <rect width="250" height="112" rx="16" fill="#f8fafc" stroke="#dbe3ef"/>
+    <circle cx="34" cy="36" r="18" fill="#ecfdf5"/>
+    <path d="M22 39 31 48 51 25" stroke="#059669" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="62" y="36" fill="#0f172a" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">Data reliability</text>
+    <text x="22" y="75" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="13">Reconciliation, merchant learning,</text>
+    <text x="22" y="94" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="13">and AI-assisted categorization.</text>
+  </g>
+</svg>
