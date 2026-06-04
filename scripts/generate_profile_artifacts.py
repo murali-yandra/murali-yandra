@@ -113,14 +113,13 @@ def write_streak_svg(days: list[dict[str, object]]) -> None:
   <rect width="520" height="180" rx="18" fill="#0d1117"/>
   <rect x="1" y="1" width="518" height="178" rx="18" fill="none" stroke="#30363d"/>
   <text x="28" y="42" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">GitHub Streaks</text>
-  <text x="28" y="68" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12">Generated from your contribution calendar</text>
-  <g transform="translate(28 92)">
+  <g transform="translate(28 78)">
     <rect width="135" height="58" rx="12" fill="#161b22" stroke="#30363d"/>
     <text x="18" y="25" fill="#39d353" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">{current}</text>
-    <text x="18" y="45" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12">Current days</text>
+    <text x="18" y="45" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12">Current streak</text>
     <rect x="154" width="135" height="58" rx="12" fill="#161b22" stroke="#30363d"/>
     <text x="172" y="25" fill="#58a6ff" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">{longest}</text>
-    <text x="172" y="45" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12">Longest days</text>
+    <text x="172" y="45" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12">Longest streak</text>
     <rect x="308" width="155" height="58" rx="12" fill="#161b22" stroke="#30363d"/>
     <text x="326" y="25" fill="#a371f7" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">{total}</text>
     <text x="326" y="45" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12">Contributions</text>
@@ -136,10 +135,22 @@ def write_streak_svg(days: list[dict[str, object]]) -> None:
 def write_catapult_svg(days: list[dict[str, object]]) -> None:
     recent = days[-35:]
     cells = []
+    row_labels = []
     for index, day in enumerate(recent):
         col = index % 7
         row = index // 7
         count = int(day["count"])
+        if col == 0:
+            start_date = date.fromisoformat(str(day["date"]))
+            end_date = date.fromisoformat(str(recent[min(index + 6, len(recent) - 1)]["date"]))
+            if start_date.month == end_date.month:
+                label = f"{start_date:%b} {start_date:%d}-{end_date:%d}"
+            else:
+                label = f"{start_date:%b} {start_date:%d}-{end_date:%b} {end_date:%d}"
+            row_labels.append(
+                f'<text x="-14" y="{row * 27 + 14}" text-anchor="end" fill="#64748b" '
+                f'font-family="Segoe UI, Arial, sans-serif" font-size="9">{label}</text>'
+            )
         cells.append(
             f'<rect x="{col * 27}" y="{row * 27}" width="19" height="19" rx="4" fill="{color_for(count)}">'
             f"<title>{day['date']}: {count} contributions</title></rect>"
@@ -156,7 +167,8 @@ def write_catapult_svg(days: list[dict[str, object]]) -> None:
   <rect width="900" height="260" rx="18" fill="url(#bg)"/>
   <rect x="1" y="1" width="898" height="258" rx="18" fill="none" stroke="#1e293b"/>
   <text x="36" y="46" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">Contribution Catapult</text>
-  <text x="36" y="72" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="14">Last 35 days: {total_recent} contributions. Updated {updated}.</text>
+  <text x="36" y="72" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="14">Committing daily, small steps for steady progress.</text>
+  <text x="36" y="94" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="12">Last 35 days: {total_recent} contributions. Updated {updated}.</text>
   <g transform="translate(92 154)">
     <line x1="0" y1="54" x2="180" y2="54" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
     <circle cx="46" cy="54" r="18" fill="#475569"/><circle cx="46" cy="54" r="8" fill="#94a3b8"/>
@@ -173,6 +185,7 @@ def write_catapult_svg(days: list[dict[str, object]]) -> None:
   </g>
   <g transform="translate(610 76)">
     <text x="0" y="-20" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">recent contribution grid</text>
+    {"".join(row_labels)}
     {"".join(cells)}
   </g>
 </svg>
