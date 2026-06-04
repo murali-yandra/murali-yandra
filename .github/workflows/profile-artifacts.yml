@@ -22,7 +22,7 @@ jobs:
       - name: Generate streak and catapult SVGs
         run: python scripts/generate_profile_artifacts.py
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PROFILE_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
 
       - name: Commit generated artifacts

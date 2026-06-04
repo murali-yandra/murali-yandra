@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 import urllib.request
+from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -10,6 +11,34 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OWNER = os.environ.get("GITHUB_REPOSITORY_OWNER", "murali-yandra")
 TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+
+
+@dataclass(frozen=True)
+class StreakSummary:
+    current: int
+    current_end: date | None
+    longest: int
+    longest_start: date | None
+    longest_end: date | None
+
+
+def graphql_request(query: str, variables: dict[str, object]) -> dict[str, object]:
+    payload = json.dumps({"query": query, "variables": variables}).encode()
+    request = urllib.request.Request(
+        "https://api.github.com/graphql",
+        data=payload,
+        headers={
+            "Authorization": f"Bearer {TOKEN}",
+            "Content-Type": "application/json",
+            "User-Agent": "murali-yandra-profile-artifacts",
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        data = json.loads(response.read().decode())
+    if data.get("errors"):
+        raise RuntimeError(json.dumps(data["errors"]))
+    return data
 
 
 def fetch_contribution_days() -> list[dict[str, object]]:
@@ -35,28 +64,14 @@ def fetch_contribution_days() -> list[dict[str, object]]:
       }
     }
     """
-    payload = json.dumps(
+    data = graphql_request(
+        query,
         {
-            "query": query,
-            "variables": {
-                "login": OWNER,
-                "from": datetime.combine(start, datetime.min.time(), timezone.utc).isoformat(),
-                "to": datetime.combine(today, datetime.max.time(), timezone.utc).isoformat(),
-            },
-        }
-    ).encode()
-    request = urllib.request.Request(
-        "https://api.github.com/graphql",
-        data=payload,
-        headers={
-            "Authorization": f"Bearer {TOKEN}",
-            "Content-Type": "application/json",
-            "User-Agent": "murali-yandra-profile-artifacts",
+            "login": OWNER,
+            "from": datetime.combine(start, datetime.min.time(), timezone.utc).isoformat(),
+            "to": datetime.combine(today, datetime.max.time(), timezone.utc).isoformat(),
         },
-        method="POST",
     )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        data = json.loads(response.read().decode())
 
     days: list[dict[str, object]] = []
     weeks = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
@@ -64,6 +79,60 @@ def fetch_contribution_days() -> list[dict[str, object]]:
         for item in week["contributionDays"]:
             days.append({"date": item["date"], "count": int(item["contributionCount"])})
     return days
+
+
+def fetch_lifetime_contributions() -> tuple[int | None, str]:
+    if not TOKEN:
+        return None, "GitHub Action refreshes this"
+
+    years_query = """
+    query($login: String!) {
+      user(login: $login) {
+        createdAt
+        contributionsCollection {
+          contributionYears
+        }
+      }
+    }
+    """
+    years_data = graphql_request(years_query, {"login": OWNER})
+    user = years_data["data"]["user"]
+    years = sorted(int(year) for year in user["contributionsCollection"]["contributionYears"])
+    if not years:
+        return 0, "No contributions yet"
+
+    today = datetime.now(timezone.utc).date()
+    total = 0
+    total_query = """
+    query($login: String!, $from: DateTime!, $to: DateTime!) {
+      user(login: $login) {
+        contributionsCollection(from: $from, to: $to) {
+          contributionCalendar {
+            totalContributions
+          }
+        }
+      }
+    }
+    """
+    for year in years:
+        start = date(year, 1, 1)
+        end = today if year == today.year else date(year, 12, 31)
+        data = graphql_request(
+            total_query,
+            {
+                "login": OWNER,
+                "from": datetime.combine(start, datetime.min.time(), timezone.utc).isoformat(),
+                "to": datetime.combine(end, datetime.max.time(), timezone.utc).isoformat(),
+            },
+        )
+        total += int(
+            data["data"]["user"]["contributionsCollection"]["contributionCalendar"][
+                "totalContributions"
+            ]
+        )
+
+    created_at = datetime.fromisoformat(str(user["createdAt"]).replace("Z", "+00:00")).date()
+    return total, f"{format_full_date(created_at)} - Present"
 
 
 def color_for(count: int) -> str:
@@ -78,7 +147,31 @@ def color_for(count: int) -> str:
     return "#39d353"
 
 
-def streaks(days: list[dict[str, object]]) -> tuple[int, int, int]:
+def format_full_date(value: date) -> str:
+    return f"{value:%b} {value.day}, {value.year}"
+
+
+def format_compact_date(value: date | None) -> str:
+    if not value:
+        return "No streak yet"
+    return f"{value:%b} {value.day}"
+
+
+def format_date_range(start: date | None, end: date | None) -> str:
+    if not start or not end:
+        return "No streak yet"
+    if start == end:
+        return format_full_date(start)
+    return f"{format_full_date(start)} - {format_full_date(end)}"
+
+
+def format_number(value: int | None) -> str:
+    if value is None:
+        return "--"
+    return f"{value:,}"
+
+
+def streaks(days: list[dict[str, object]]) -> StreakSummary:
     counts = {date.fromisoformat(str(day["date"])): int(day["count"]) for day in days}
     today = datetime.now(timezone.utc).date()
     cursor = today
@@ -86,45 +179,74 @@ def streaks(days: list[dict[str, object]]) -> tuple[int, int, int]:
         cursor -= timedelta(days=1)
 
     current = 0
+    current_end = cursor if counts.get(cursor, 0) > 0 else None
     while counts.get(cursor, 0) > 0:
         current += 1
         cursor -= timedelta(days=1)
 
     longest = 0
     run = 0
+    run_start: date | None = None
+    longest_start: date | None = None
+    longest_end: date | None = None
     for day in sorted(counts):
         if counts[day] > 0:
+            if run == 0:
+                run_start = day
             run += 1
-            longest = max(longest, run)
+            if run > longest:
+                longest = run
+                longest_start = run_start
+                longest_end = day
         else:
             run = 0
+            run_start = None
 
-    one_year_ago = today - timedelta(days=365)
-    total = sum(count for day, count in counts.items() if day >= one_year_ago)
-    return current, longest, total
+    return StreakSummary(current, current_end, longest, longest_start, longest_end)
 
 
-def write_streak_svg(days: list[dict[str, object]]) -> None:
-    current, longest, total = streaks(days)
+def write_streak_svg(
+    days: list[dict[str, object]], lifetime_total: int | None, contribution_range: str
+) -> None:
+    summary = streaks(days)
     updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="520" height="180" viewBox="0 0 520 180" role="img" aria-labelledby="title desc">
-  <title id="title">GitHub streaks</title>
-  <desc id="desc">Current streak {current} days, longest streak {longest} days, total contributions {total} in the last year.</desc>
-  <rect width="520" height="180" rx="18" fill="#0d1117"/>
-  <rect x="1" y="1" width="518" height="178" rx="18" fill="none" stroke="#30363d"/>
-  <text x="28" y="42" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">GitHub Streaks</text>
-  <g transform="translate(28 78)">
-    <rect width="135" height="58" rx="12" fill="#161b22" stroke="#30363d"/>
-    <text x="18" y="25" fill="#39d353" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">{current}</text>
-    <text x="18" y="45" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12">Current streak</text>
-    <rect x="154" width="135" height="58" rx="12" fill="#161b22" stroke="#30363d"/>
-    <text x="172" y="25" fill="#58a6ff" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">{longest}</text>
-    <text x="172" y="45" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12">Longest streak</text>
-    <rect x="308" width="155" height="58" rx="12" fill="#161b22" stroke="#30363d"/>
-    <text x="326" y="25" fill="#a371f7" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">{total}</text>
-    <text x="326" y="45" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12">Contributions</text>
+    total_display = format_number(lifetime_total)
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="520" height="220" viewBox="0 0 520 220" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub Streak</title>
+  <desc id="desc">Lifetime contributions {total_display}, current streak {summary.current} days, longest streak {summary.longest} days. Updated {updated}.</desc>
+  <defs>
+    <linearGradient id="fire" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ff3b30"/>
+      <stop offset="0.55" stop-color="#ff7a00"/>
+      <stop offset="1" stop-color="#ffd166"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="220" rx="8" fill="#010409"/>
+  <text x="260" y="40" text-anchor="middle" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">GitHub Streak</text>
+  <rect x="10" y="66" width="500" height="132" rx="6" fill="#0d1117"/>
+  <line x1="178" y1="88" x2="178" y2="176" stroke="#d0d7de" stroke-width="1.5"/>
+  <line x1="342" y1="88" x2="342" y2="176" stroke="#d0d7de" stroke-width="1.5"/>
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <text x="94" y="116" fill="#58a6ff" font-size="26" font-weight="800">{total_display}</text>
+    <text x="94" y="146" fill="#f0f6fc" font-size="13" font-weight="700">Total Contributions</text>
+    <text x="94" y="174" fill="#8b949e" font-size="11">{contribution_range}</text>
   </g>
-  <text x="28" y="166" fill="#6e7681" font-family="Segoe UI, Arial, sans-serif" font-size="11">Updated {updated}</text>
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <circle cx="260" cy="116" r="41" fill="none" stroke="#21262d" stroke-width="5"/>
+    <circle cx="260" cy="116" r="41" fill="none" stroke="url(#fire)" stroke-width="6" stroke-linecap="round"/>
+    <g transform="translate(250 75)">
+      <path d="M10 24C2 18 3 10 9 2c1 7 8 7 8 14 3-2 5-6 3-11 8 8 9 17 2 23-4 3-9 2-12-4Z" fill="#ff5a1f"/>
+      <path d="M12 25c-4-4-3-9 1-14 1 5 5 5 5 9 2-1 3-4 2-7 5 5 6 10 1 14-3 2-7 1-9-2Z" fill="#ffd166"/>
+    </g>
+    <text x="260" y="125" fill="#f0f6fc" font-size="30" font-weight="800">{summary.current}</text>
+    <text x="260" y="168" fill="#f0f6fc" font-size="13" font-weight="800">Current Streak</text>
+    <text x="260" y="190" fill="#8b949e" font-size="11">{format_compact_date(summary.current_end)}</text>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <text x="426" y="116" fill="#58a6ff" font-size="26" font-weight="800">{summary.longest}</text>
+    <text x="426" y="146" fill="#f0f6fc" font-size="13" font-weight="700">Longest Streak</text>
+    <text x="426" y="174" fill="#8b949e" font-size="11">{format_date_range(summary.longest_start, summary.longest_end)}</text>
+  </g>
 </svg>
 """
     output = ROOT / "assets" / "generated" / "streak.svg"
@@ -197,7 +319,8 @@ def write_catapult_svg(days: list[dict[str, object]]) -> None:
 
 def main() -> None:
     days = fetch_contribution_days()
-    write_streak_svg(days)
+    lifetime_total, contribution_range = fetch_lifetime_contributions()
+    write_streak_svg(days, lifetime_total, contribution_range)
     write_catapult_svg(days)
 
 

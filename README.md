@@ -81,7 +81,7 @@ End-to-end data pipeline on Google Cloud using Airflow orchestration, dbt transf
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=murali-yandra&amp;theme=github_dark" height="175" alt="Murali Yandra GitHub stats" title="GitHub Stats" />
-  <img src="assets/generated/streak.svg" height="175" alt="Murali Yandra GitHub streaks" title="GitHub Streaks" />
+  <img src="assets/generated/streak.svg" height="210" alt="Murali Yandra GitHub streaks" title="GitHub Streak" />
 </p>
 
 ## Contributions
