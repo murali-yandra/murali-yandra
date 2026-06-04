@@ -5,12 +5,12 @@
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/murali-yandra">
-    <img src="https://skillicons.dev/icons?i=linkedin" width="28" alt="LinkedIn" />
+  <a href="https://linkedin.com/in/murali-yandra" title="Explore my LinkedIn">
+    <img src="assets/icons/LinkedIn.png" width="30" alt="LinkedIn" title="Explore my LinkedIn" />
   </a>
   &nbsp;&nbsp;
-  <a href="mailto:yandramurali437@gmail.com">
-    <img src="https://skillicons.dev/icons?i=gmail" width="28" alt="Email" />
+  <a href="mailto:yandramurali437@gmail.com" title="Contact me via mail">
+    <img src="assets/icons/Gmail.png" width="30" alt="Gmail" title="Contact me via mail" />
   </a>
 </p>
 
@@ -23,31 +23,27 @@ My focus is simple: build data platforms that are clean, automated, explainable,
 ## Languages and Tools
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=python" width="48" alt="Python" />
+  <img src="assets/icons/Python.svg" width="48" alt="Python" title="Python" />
   &nbsp;
-  <img src="https://skillicons.dev/icons?i=azure" width="48" alt="Azure" />
+  <img src="assets/icons/Azure%20Devops.svg" width="48" alt="Azure DevOps" title="Azure DevOps" />
   &nbsp;
-  <img src="https://skillicons.dev/icons?i=gcp" width="48" alt="Google Cloud" />
+  <img src="assets/icons/Google%20Cloud.svg" width="48" alt="Google Cloud" title="Google Cloud" />
   &nbsp;
-  <img src="https://skillicons.dev/icons?i=postgres" width="48" alt="PostgreSQL" />
+  <img src="assets/icons/BigQuery.svg" width="48" alt="BigQuery" title="BigQuery" />
   &nbsp;
-  <img src="https://skillicons.dev/icons?i=docker" width="48" alt="Docker" />
+  <img src="assets/icons/PostgresSQL.svg" width="48" alt="PostgreSQL" title="PostgreSQL" />
   &nbsp;
-  <img src="https://skillicons.dev/icons?i=githubactions" width="48" alt="GitHub Actions" />
+  <img src="assets/icons/SQL%20Server.png" width="48" alt="SQL Server" title="SQL Server" />
   &nbsp;
-  <img src="https://skillicons.dev/icons?i=fastapi" width="48" alt="FastAPI" />
+  <img src="assets/icons/Apache%20Airflow.svg" width="48" alt="Apache Airflow" title="Apache Airflow" />
   &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" width="48" alt="SQL Server" />
+  <img src="assets/icons/Apache%20Spark.svg" width="48" alt="Apache Spark" title="Apache Spark" />
   &nbsp;
-  <img src="https://api.iconify.design/simple-icons:apacheairflow.svg?color=%23017CEE" width="48" alt="Apache Airflow" />
+  <img src="assets/icons/FastAPI.svg" width="48" alt="FastAPI" title="FastAPI" />
   &nbsp;
-  <img src="https://cdn.simpleicons.org/apachespark/E25A1C" width="48" alt="Apache Spark" />
+  <img src="assets/icons/Docker.svg" width="48" alt="Docker" title="Docker" />
   &nbsp;
-  <img src="https://cdn.simpleicons.org/googlebigquery/4285F4" width="48" alt="BigQuery" />
-  &nbsp;
-  <img src="https://api.iconify.design/simple-icons:dbt.svg?color=%23FF694B" width="48" alt="dbt" />
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/telegram/26A5E4" width="48" alt="Telegram Bot API" />
+  <img src="assets/icons/Git.svg" width="48" alt="Git" title="Git" />
 </p>
 
 ## What I Build and Work On
@@ -75,18 +71,15 @@ End-to-end data pipeline on Google Cloud using Airflow orchestration, dbt transf
 
 `Airflow` `dbt` `BigQuery` `GCP` `Python` `SQL`
 
-## GitHub Stats
+## GitHub Stats and Streaks
 
-![Murali Yandra GitHub stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=murali-yandra&theme=github_dark)
-
-![Murali Yandra day streak](https://streak-stats.demolab.com?user=murali-yandra&theme=github-dark-blue&hide_border=true&date_format=M%20j%5B%2C%20Y%5D&mode=daily)
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=murali-yandra&amp;theme=github_dark" height="175" alt="Murali Yandra GitHub stats" title="GitHub Stats" />
+  <img src="https://streak-stats.demolab.com?user=murali-yandra&amp;theme=github-dark-blue&amp;hide_border=true" height="175" alt="Murali Yandra GitHub streaks" title="GitHub Streaks" />
+</p>
 
 ## Contributions
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/murali-yandra/murali-yandra/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/murali-yandra/murali-yandra/output/github-snake.svg" />
-    <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/murali-yandra/murali-yandra/output/github-snake.svg" />
-  </picture>
+  <img src="assets/animations/contribution-catapult.svg" width="100%" alt="Contribution catapult animation" title="Contribution Catapult" />
 </p>

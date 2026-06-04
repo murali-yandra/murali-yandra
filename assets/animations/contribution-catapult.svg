@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" role="img" aria-labelledby="title desc">
+  <title id="title">Contribution Catapult</title>
+  <desc id="desc">Animated catapult launching contribution dots into a grid.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="260" rx="18" fill="url(#bg)"/>
+  <rect x="1" y="1" width="898" height="258" rx="18" fill="none" stroke="#1e293b"/>
+  <text x="36" y="46" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">Contribution Catapult</text>
+  <text x="36" y="72" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="14">Launching small daily commits into steady progress.</text>
+
+  <g transform="translate(92 154)">
+    <line x1="0" y1="54" x2="180" y2="54" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="46" cy="54" r="18" fill="#475569"/>
+    <circle cx="46" cy="54" r="8" fill="#94a3b8"/>
+    <circle cx="132" cy="54" r="18" fill="#475569"/>
+    <circle cx="132" cy="54" r="8" fill="#94a3b8"/>
+    <line x1="60" y1="46" x2="130" y2="-14" stroke="#38bdf8" stroke-width="10" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" values="0 60 46; -14 60 46; 0 60 46" dur="2.4s" repeatCount="indefinite"/>
+    </line>
+    <circle cx="132" cy="-18" r="12" fill="#22c55e" filter="url(#glow)">
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.55;0.85;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M42 54 92 18 146 54" fill="none" stroke="#64748b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <circle r="8" fill="#22c55e">
+      <animateMotion dur="2.4s" repeatCount="indefinite" path="M224 136 C330 40, 470 22, 610 86"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.72;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="6" fill="#38bdf8">
+      <animateMotion dur="2.4s" begin=".32s" repeatCount="indefinite" path="M224 136 C330 55, 500 44, 650 116"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.72;1" dur="2.4s" begin=".32s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="7" fill="#a78bfa">
+      <animateMotion dur="2.4s" begin=".64s" repeatCount="indefinite" path="M224 136 C360 70, 520 64, 690 146"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.72;1" dur="2.4s" begin=".64s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g transform="translate(610 82)">
+    <text x="0" y="-26" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">progress grid</text>
+    <g fill="#163323">
+      <rect x="0" y="0" width="18" height="18" rx="4"/>
+      <rect x="26" y="0" width="18" height="18" rx="4"/>
+      <rect x="52" y="0" width="18" height="18" rx="4"/>
+      <rect x="78" y="0" width="18" height="18" rx="4"/>
+      <rect x="104" y="0" width="18" height="18" rx="4"/>
+      <rect x="130" y="0" width="18" height="18" rx="4"/>
+      <rect x="156" y="0" width="18" height="18" rx="4"/>
+      <rect x="0" y="26" width="18" height="18" rx="4"/>
+      <rect x="26" y="26" width="18" height="18" rx="4"/>
+      <rect x="52" y="26" width="18" height="18" rx="4"/>
+      <rect x="78" y="26" width="18" height="18" rx="4"/>
+      <rect x="104" y="26" width="18" height="18" rx="4"/>
+      <rect x="130" y="26" width="18" height="18" rx="4"/>
+      <rect x="156" y="26" width="18" height="18" rx="4"/>
+      <rect x="0" y="52" width="18" height="18" rx="4"/>
+      <rect x="26" y="52" width="18" height="18" rx="4"/>
+      <rect x="52" y="52" width="18" height="18" rx="4"/>
+      <rect x="78" y="52" width="18" height="18" rx="4"/>
+      <rect x="104" y="52" width="18" height="18" rx="4"/>
+      <rect x="130" y="52" width="18" height="18" rx="4"/>
+      <rect x="156" y="52" width="18" height="18" rx="4"/>
+    </g>
+    <rect x="0" y="0" width="18" height="18" rx="4" fill="#22c55e">
+      <animate attributeName="opacity" values=".35;1;.35" dur="2.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="52" y="26" width="18" height="18" rx="4" fill="#38bdf8">
+      <animate attributeName="opacity" values=".35;1;.35" dur="2.4s" begin=".32s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="104" y="52" width="18" height="18" rx="4" fill="#a78bfa">
+      <animate attributeName="opacity" values=".35;1;.35" dur="2.4s" begin=".64s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="156" y="26" width="18" height="18" rx="4" fill="#22c55e">
+      <animate attributeName="opacity" values=".35;1;.35" dur="2.4s" begin=".96s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
