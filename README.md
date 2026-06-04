@@ -14,6 +14,10 @@
   </a>
 </p>
 
+<p align="center">
+  <img src="assets/animations/stickman-hi.svg" width="100%" alt="Stick man waving hi" title="Stick man waving hi" />
+</p>
+
 ## About Me
 
 I am a Data Engineer at Accenture, based in Bengaluru, India. I work on data pipelines, SQL performance, cloud analytics, ETL modernization, workflow orchestration, and reliable data movement across production systems.
@@ -21,6 +25,10 @@ I am a Data Engineer at Accenture, based in Bengaluru, India. I work on data pip
 My focus is simple: build data platforms that are clean, automated, explainable, and useful.
 
 ## Languages and Tools
+
+<p align="center">
+  <img src="assets/animations/stickman-tools.svg" width="100%" alt="Stick man climbing across tools" title="Stick man climbing across tools" />
+</p>
 
 <p align="left">
   <img src="assets/icons/Python.svg" width="48" alt="Python" title="Python" />
@@ -54,6 +62,10 @@ My focus is simple: build data platforms that are clean, automated, explainable,
 
 ## What I Build and Work On
 
+<p align="center">
+  <img src="assets/animations/stickman-projects.svg" width="100%" alt="Stick man carrying project blocks" title="Stick man carrying project blocks" />
+</p>
+
 ### Personal Finance Tracking Platform
 
 Personal finance platform for automated expense tracking, account reconciliation, merchant learning, and AI-assisted transaction categorization.
@@ -80,8 +92,12 @@ End-to-end data pipeline on Google Cloud using Airflow orchestration, dbt transf
 ## GitHub Stats and Streaks
 
 <p align="center">
+  <img src="assets/animations/stickman-stats.svg" width="100%" alt="Stick man jumping over stats bars" title="Stick man jumping over stats bars" />
+</p>
+
+<p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=murali-yandra&amp;theme=github_dark" height="175" alt="Murali Yandra GitHub stats" title="GitHub Stats" />
-  <img src="https://streak-stats.demolab.com?user=murali-yandra&amp;theme=github-dark-blue&amp;hide_border=true" height="175" alt="Murali Yandra GitHub streaks" title="GitHub Streaks" />
+  <img src="assets/generated/streak.svg" height="175" alt="Murali Yandra GitHub streaks" title="GitHub Streaks" />
 </p>
 
 ## Contributions
