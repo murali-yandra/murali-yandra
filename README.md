@@ -1,10 +1,10 @@
-<h2 align="center">Hey Hi, I am Murali</h2>
+<h1 align="left">Hey Hi, I am Murali</h1>
 
-<p align="center">
+<p align="left">
   Thanks for visiting my profile.
 </p>
 
-<p align="center">
+<p align="left">
   <a href="https://linkedin.com/in/murali-yandra" title="Explore my LinkedIn">
     <img src="assets/icons/LinkedIn.png" width="30" alt="LinkedIn" title="Explore my LinkedIn" />
   </a>
@@ -25,6 +25,10 @@ My focus is simple: build data platforms that are clean, automated, explainable,
 <p align="left">
   <img src="assets/icons/Python.svg" width="48" alt="Python" title="Python" />
   &nbsp;
+  <img src="assets/icons/data-factories.svg" width="48" alt="Azure Data Factory" title="Azure Data Factory" />
+  &nbsp;
+  <img src="assets/icons/etl.png" width="48" alt="Extract, Transform, Load" title="Extract, Transform, Load" />
+  &nbsp;
   <img src="assets/icons/Azure%20Devops.svg" width="48" alt="Azure DevOps" title="Azure DevOps" />
   &nbsp;
   <img src="assets/icons/Google%20Cloud.svg" width="48" alt="Google Cloud" title="Google Cloud" />
@@ -38,6 +42,8 @@ My focus is simple: build data platforms that are clean, automated, explainable,
   <img src="assets/icons/Apache%20Airflow.svg" width="48" alt="Apache Airflow" title="Apache Airflow" />
   &nbsp;
   <img src="assets/icons/Apache%20Spark.svg" width="48" alt="Apache Spark" title="Apache Spark" />
+  &nbsp;
+  <img src="assets/icons/Dbt--Streamline-Svg-Logos.svg" width="48" alt="Data Build Tool" title="Data Build Tool" />
   &nbsp;
   <img src="assets/icons/FastAPI.svg" width="48" alt="FastAPI" title="FastAPI" />
   &nbsp;
