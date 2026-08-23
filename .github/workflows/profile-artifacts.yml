@@ -4,9 +4,8 @@ on:
   push:
     branches:
       - main
-      - feature/profile-readme-dashboard-fixes
   schedule:
-    - cron: "0 * * * *"
+    - cron: "30 5 * * *"
   workflow_dispatch:
 
 permissions:
@@ -19,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate streak and catapult SVGs
+      - name: Generate profile SVGs
         run: python scripts/generate_profile_artifacts.py
         env:
           GH_TOKEN: ${{ secrets.PROFILE_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
@@ -29,6 +28,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/generated/streak.svg assets/animations/contribution-catapult.svg
+          git add assets/generated/stats.svg assets/generated/streak.svg assets/animations/contribution-catapult.svg
           git diff --cached --quiet || git commit -m "Update generated profile artifacts"
           git push

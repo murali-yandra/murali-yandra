@@ -1,8 +1,4 @@
-<h1 align="left">Hey Hi, I am Murali <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32" alt="Waving hand" /></h1>
-
-<p align="left">
-  Thanks for visiting my profile.
-</p>
+<h1 align="left">Hey, I'm Murali <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32" alt="Waving hand" /></h1>
 
 <p align="left">
   <a href="https://linkedin.com/in/murali-yandra" title="Explore my LinkedIn">
@@ -14,11 +10,9 @@
   </a>
 </p>
 
-## About Me
+Data Engineer at Accenture (Bengaluru) — I build pipelines that don't break at 3 AM, tune SQL until it stops crying, and convince legacy ETL systems to retire gracefully.
 
-I am a Data Engineer at Accenture, based in Bengaluru, India. I work on data pipelines, SQL performance, cloud analytics, ETL modernization, workflow orchestration, and reliable data movement across production systems.
-
-My focus is simple: build data platforms that are clean, automated, explainable, and useful.
+My focus: data pipelines, cloud analytics (GCP + Azure), workflow orchestration, and making data move without drama.
 
 ## Languages and Tools
 
@@ -52,15 +46,15 @@ My focus is simple: build data platforms that are clean, automated, explainable,
   <img src="assets/icons/Git.svg" width="48" alt="Git" title="Git" />
 </p>
 
-## What I Build and Work On
+## What's Keeping Me Busy
 
 ### Personal Finance Tracking Platform
 
-Personal finance platform for automated expense tracking, account reconciliation, merchant learning, and AI-assisted transaction categorization.
+Automated expense tracker that ingests SMS transactions, learns merchant names, and uses an LLM to categorize my terrible spending habits. The bot already works, the budgeting advice is... aspirational.
 
 `FastAPI` `PostgreSQL` `SQLModel` `Alembic` `Docker` `GitHub Actions` `Ollama` `Telegram Bot API`
 
-Currently working on:
+Currently building:
 
 - SMS-based transaction ingestion
 - Merchant learning engine
@@ -68,24 +62,29 @@ Currently working on:
 - Telegram bot integration
 - AI-assisted categorization
 
-Status: Sprint 0 completed, Sprint 1 in progress  
 Repository: Private
 
 ### [GCP Airflow DBT Pipeline](https://github.com/murali-yandra/gcp-airflow-dbt-pipeline)
 
-End-to-end data pipeline on Google Cloud using Airflow orchestration, dbt transformations, BigQuery analytics, Python, and SQL.
+End-to-end data pipeline on GCP. Airflow orchestrates, dbt transforms, BigQuery stores, and I pretend I had it all planned from the start.
 
 `Airflow` `dbt` `BigQuery` `GCP` `Python` `SQL`
 
 ## GitHub Stats and Streaks
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=murali-yandra&amp;theme=github_dark" height="175" alt="Murali Yandra GitHub stats" title="GitHub Stats" />
-  <img src="assets/generated/streak.svg" height="210" alt="Murali Yandra GitHub streaks" title="GitHub Streak" />
+  <img src="assets/generated/stats.svg" height="175" alt="Murali Yandra GitHub stats" title="GitHub Stats" />
+  <img src="assets/generated/streak.svg" height="175" alt="Murali Yandra GitHub streaks" title="GitHub Streak" />
 </p>
 
 ## Contributions
 
 <p align="center">
   <img src="assets/animations/contribution-catapult.svg" width="100%" alt="Contribution catapult animation" title="Contribution Catapult" />
+</p>
+
+---
+
+<p align="center">
+  <i>This profile updates itself daily. Yes, I automated my own README. No, I don't have a problem.</i>
 </p>
