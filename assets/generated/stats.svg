@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="180" viewBox="0 0 340 180" role="img" aria-labelledby="stats-title stats-desc">
+  <title id="stats-title">GitHub Stats</title>
+  <desc id="stats-desc">0 public repos, 0 stars, 0 followers, on GitHub for 0 months.</desc>
+  <rect width="340" height="180" rx="8" fill="#010409"/>
+  <rect x="10" y="10" width="320" height="160" rx="6" fill="#0d1117"/>
+  <text x="170" y="40" text-anchor="middle" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">GitHub Stats</text>
+  <g font-family="Segoe UI, Arial, sans-serif" transform="translate(30, 60)">
+    <g>
+      <text fill="#8b949e" font-size="13">Public Repos</text>
+      <text x="200" fill="#58a6ff" font-size="13" font-weight="700" text-anchor="end">0</text>
+    </g>
+    <g transform="translate(0, 24)">
+      <text fill="#8b949e" font-size="13">Total Stars</text>
+      <text x="200" fill="#58a6ff" font-size="13" font-weight="700" text-anchor="end">0</text>
+    </g>
+    <g transform="translate(0, 48)">
+      <text fill="#8b949e" font-size="13">Followers</text>
+      <text x="200" fill="#58a6ff" font-size="13" font-weight="700" text-anchor="end">0</text>
+    </g>
+    <g transform="translate(0, 72)">
+      <text fill="#8b949e" font-size="13">On GitHub for</text>
+      <text x="200" fill="#58a6ff" font-size="13" font-weight="700" text-anchor="end">0 months</text>
+    </g>
+  </g>
+  <g transform="translate(55, 148)">
+    
+  </g>
+  <g transform="translate(30, 166)">
+    
+  </g>
+</svg>
