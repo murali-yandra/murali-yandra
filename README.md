@@ -14,6 +14,8 @@ Data Engineer at Accenture (Bengaluru) — I build pipelines that don't break at
 
 My focus: data pipelines, cloud analytics (GCP + Azure), workflow orchestration, and making data move without drama.
 
+Check out my [portfolio](https://muraliyandra.framer.ai/) for the full project stories.
+
 ## Languages and Tools
 
 <p align="left">
@@ -48,27 +50,27 @@ My focus: data pipelines, cloud analytics (GCP + Azure), workflow orchestration,
 
 ## What's Keeping Me Busy
 
-### Personal Finance Tracking Platform
+### [Finnhub Streaming Data Pipeline](https://github.com/murali-yandra/real-time-market-data-pipeline)
 
-Automated expense tracker that ingests SMS transactions, learns merchant names, and uses an LLM to categorize my terrible spending habits. The bot already works, the budgeting advice is... aspirational.
+Real-time streaming pipeline that ingests live stock market data from Finnhub, processes it with Spark Structured Streaming, and visualizes it in Grafana. Started as a thesis project, turned into a full-stack data engineering learning experience — the classic scope creep, but the good kind.
 
-`FastAPI` `PostgreSQL` `SQLModel` `Alembic` `Docker` `GitHub Actions` `Ollama` `Telegram Bot API`
+`Apache Spark` `Kafka` `Cassandra` `Python` `Avro` `Grafana` `Docker` `Kubernetes` `Terraform`
 
-Currently building:
+### [GCP Data Pipeline](https://github.com/murali-yandra/gcp-airflow-dbt-pipeline)
 
-- SMS-based transaction ingestion
-- Merchant learning engine
-- Balance reconciliation
-- Telegram bot integration
-- AI-assisted categorization
+End-to-end ELT pipeline on GCP. Data lands in Cloud Storage, gets loaded into BigQuery, and dbt transforms it into something useful — all orchestrated by Airflow. What started as "just extract some API data" turned into three full iterations. Classic.
 
-Repository: Private
+`Airflow` `dbt` `BigQuery` `GCP` `Python` `SQL` `Docker`
 
-### [GCP Airflow DBT Pipeline](https://github.com/murali-yandra/gcp-airflow-dbt-pipeline)
+### [Life Flow](https://github.com/murali-yandra/LifeFlow)
 
-End-to-end data pipeline on GCP. Airflow orchestrates, dbt transforms, BigQuery stores, and I pretend I had it all planned from the start.
+A personal habit, mood, and goal tracker I built to see how good I could make the whole thing feel to use. Tracks habits, moods, goals, and stores journal entries — because apparently I needed to engineer my way into self-reflection.
 
-`Airflow` `dbt` `BigQuery` `GCP` `Python` `SQL`
+### [Iris Classifier](https://github.com/murali-yandra/Iris-flowers-Classification)
+
+ML classifier that went from a standard notebook exercise to a full deployment pipeline. Trained three models, picked Logistic Regression, deployed it via Flask, then reimplemented the math in vanilla JavaScript so it runs entirely in the browser. No server, no excuses.
+
+`Python` `Scikit-learn` `Flask` `Pandas` `JavaScript` `GitHub Pages`
 
 ## GitHub Stats and Streaks
 
