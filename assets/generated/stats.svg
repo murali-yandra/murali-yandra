@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="340" height="220" viewBox="0 0 340 220" role="img" aria-labelledby="stats-title stats-desc">
   <title id="stats-title">GitHub Stats</title>
-  <desc id="stats-desc">11 public repos, 0 stars, 0 followers, on GitHub for 2 years.</desc>
+  <desc id="stats-desc">13 public repos, 0 stars, 0 followers, on GitHub for 2 years.</desc>
   <rect width="340" height="220" rx="8" fill="#010409"/>
   <rect x="10" y="10" width="320" height="200" rx="6" fill="#0d1117"/>
   <text x="170" y="40" text-anchor="middle" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">GitHub Stats</text>
   <g font-family="Segoe UI, Arial, sans-serif" transform="translate(30, 60)">
     <g>
       <text fill="#8b949e" font-size="13">Public Repos</text>
-      <text x="200" fill="#58a6ff" font-size="13" font-weight="700" text-anchor="end">11</text>
+      <text x="200" fill="#58a6ff" font-size="13" font-weight="700" text-anchor="end">13</text>
     </g>
     <g transform="translate(0, 24)">
       <text fill="#8b949e" font-size="13">Total Stars</text>
@@ -23,14 +23,14 @@
     </g>
   </g>
   <g transform="translate(55, 148)">
-    <rect x="0.0" y="0" width="172.4" height="8" rx="1" fill="#8b949e"/>
-    <rect x="172.4" y="0" width="41.2" height="8" rx="1" fill="#3572A5"/>
-    <rect x="213.5" y="0" width="14.3" height="8" rx="1" fill="#3178c6"/>
-    <rect x="227.8" y="0" width="2.0" height="8" rx="1" fill="#e34c26"/>
-    <rect x="229.8" y="0" width="2.0" height="8" rx="1" fill="#844fba"/>
+    <rect x="0.0" y="0" width="158.4" height="8" rx="1" fill="#8b949e"/>
+    <rect x="158.4" y="0" width="37.9" height="8" rx="1" fill="#3572A5"/>
+    <rect x="196.3" y="0" width="26.4" height="8" rx="1" fill="#3178c6"/>
+    <rect x="222.7" y="0" width="3.8" height="8" rx="1" fill="#563d7c"/>
+    <rect x="226.5" y="0" width="3.5" height="8" rx="1" fill="#f1e05a"/>
   </g>
   <g transform="translate(30, 166)">
-    <g transform="translate(0, 0)"><g transform="translate(0, 0)"><circle r="4" cx="4" cy="4" fill="#8b949e"/><text x="12" y="8" fill="#8b949e" font-size="11" font-family="Segoe UI, Arial, sans-serif">Jupyter Notebook 75%</text></g><g transform="translate(90, 0)"><circle r="4" cx="4" cy="4" fill="#3572A5"/><text x="12" y="8" fill="#8b949e" font-size="11" font-family="Segoe UI, Arial, sans-serif">Python 18%</text></g><g transform="translate(180, 0)"><circle r="4" cx="4" cy="4" fill="#3178c6"/><text x="12" y="8" fill="#8b949e" font-size="11" font-family="Segoe UI, Arial, sans-serif">TypeScript 6%</text></g></g>
-    <g transform="translate(0, 20)"><g transform="translate(270, 0)"><circle r="4" cx="4" cy="4" fill="#e34c26"/><text x="12" y="8" fill="#8b949e" font-size="11" font-family="Segoe UI, Arial, sans-serif">HTML 0%</text></g><g transform="translate(360, 0)"><circle r="4" cx="4" cy="4" fill="#844fba"/><text x="12" y="8" fill="#8b949e" font-size="11" font-family="Segoe UI, Arial, sans-serif">HCL 0%</text></g></g>
+    <g transform="translate(0, 0)"><g transform="translate(0, 0)"><circle r="4" cx="4" cy="4" fill="#8b949e"/><text x="12" y="8" fill="#8b949e" font-size="11" font-family="Segoe UI, Arial, sans-serif">Jupyter Notebook 69%</text></g><g transform="translate(90, 0)"><circle r="4" cx="4" cy="4" fill="#3572A5"/><text x="12" y="8" fill="#8b949e" font-size="11" font-family="Segoe UI, Arial, sans-serif">Python 16%</text></g><g transform="translate(180, 0)"><circle r="4" cx="4" cy="4" fill="#3178c6"/><text x="12" y="8" fill="#8b949e" font-size="11" font-family="Segoe UI, Arial, sans-serif">TypeScript 11%</text></g></g>
+    <g transform="translate(0, 20)"><g transform="translate(270, 0)"><circle r="4" cx="4" cy="4" fill="#563d7c"/><text x="12" y="8" fill="#8b949e" font-size="11" font-family="Segoe UI, Arial, sans-serif">CSS 2%</text></g><g transform="translate(360, 0)"><circle r="4" cx="4" cy="4" fill="#f1e05a"/><text x="12" y="8" fill="#8b949e" font-size="11" font-family="Segoe UI, Arial, sans-serif">JavaScript 2%</text></g></g>
   </g>
 </svg>
