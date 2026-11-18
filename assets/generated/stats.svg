@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="340" height="220" viewBox="0 0 340 220" role="img" aria-labelledby="stats-title stats-desc">
   <title id="stats-title">GitHub Stats</title>
-  <desc id="stats-desc">13 public repos, 0 stars, 0 followers, on GitHub for 2 years.</desc>
+  <desc id="stats-desc">13 public repos, 0 stars, 0 followers, on GitHub for 3 years.</desc>
   <rect width="340" height="220" rx="8" fill="#010409"/>
   <rect x="10" y="10" width="320" height="200" rx="6" fill="#0d1117"/>
   <text x="170" y="40" text-anchor="middle" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">GitHub Stats</text>
@@ -19,7 +19,7 @@
     </g>
     <g transform="translate(0, 72)">
       <text fill="#8b949e" font-size="13">On GitHub for</text>
-      <text x="200" fill="#58a6ff" font-size="13" font-weight="700" text-anchor="end">2 years</text>
+      <text x="200" fill="#58a6ff" font-size="13" font-weight="700" text-anchor="end">3 years</text>
     </g>
   </g>
   <g transform="translate(55, 148)">
